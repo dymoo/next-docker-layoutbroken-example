@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  next:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "127.0.0.1:3099:3000"
